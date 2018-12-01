@@ -14,11 +14,11 @@ at this step if you're not using the CDF computers. Leave all other settings
 to default values. Create and launch the virtual device and ensure it loads correctly.
 4. Close the Android Studio entirely, now you need to open the correct folder based on your need
     * If you wish to view the discussion notes, README.md and TEAM.md, open the project,
-     with Android Studio, at directory ```/your/local/path/group_0616/Phase2```,
+     with Android Studio, at directory ```/your/local/path/The Mars Game Platform```,
      you should be able to see the files that you are looking for to the left
      \(under the tab ```1: Project```) then choose ```Project``` in the drop down menu.
     * If you wish to play the game on an emulator or modify the code, open the project ,
-    with Android Studio, at directory ```/your/local/path/group_0616/Phase2/GameCentre```.
+    with Android Studio, at directory ```/your/local/path/The Mars Game Platform/GameCentre```.
      On the top right, click the green triangle to run the app,
      and select the pixel 2 emulator that you have already installed on your
      machine to run the app.
