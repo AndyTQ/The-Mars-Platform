@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background_new"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <ImageView
+        android:id="@+id/login_background_logo"
+        android:layout_width="341dp"
+        android:layout_height="89dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="94dp"
+        app:srcCompat="@drawable/login_logo"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <EditText
+        android:id="@+id/login_user_name_entered"
+        android:layout_width="310dp"
+        android:layout_height="63dp"
+        android:layout_below="@+id/login_background_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/rounded_rectangle"
+        android:ems="10"
+        android:paddingLeft="@dimen/_7sdp"
+        android:hint="Your Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/login_password_entered"
+        android:layout_width="310dp"
+        android:layout_height="63dp"
+        android:layout_below="@+id/login_user_name_entered"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_rectangle"
+
+        android:paddingLeft="@dimen/_7sdp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="311dp" />
+
+    <TextView
+        android:id="@+id/login_teaminfo"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="68dp"
+        android:text="©2018 Team0616"
+        android:textColor="@android:color/darker_gray"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="554dp" />
+
+    <Button
+        android:background="@drawable/login_button_color"
+        android:id="@+id/login_button"
+        android:textColor="@drawable/login_button_text_color"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_password_entered"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Login" />
+
+    <TextView
+        android:textColor="#cccccc"
+        android:id="@+id/sign_up_button"
+        android:layout_width="313dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/login_remember_checkbox"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Do not have Mars account? Sign Up"
+        android:textSize="16dip"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="524dp" />
+
+    <ProgressBar
+        android:id="@+id/login_progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="49dp"
+        android:layout_height="42dp"
+        android:layout_alignBottom="@+id/login_password_entered"
+        android:layout_centerHorizontal="true"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="346dp" />
+
+    <CheckBox
+        android:buttonTint="#cccccc"
+        android:textColor="#cccccc"
+        android:id="@+id/login_remember_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_button"
+        android:layout_centerHorizontal="true"
+        android:text="Remember Me"
+        android:layout_marginTop="5dp"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="437dp" />
+
+</RelativeLayout>

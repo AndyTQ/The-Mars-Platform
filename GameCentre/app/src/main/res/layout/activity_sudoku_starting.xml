@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sudoku_starting_background">
+
+    <ImageView
+        android:layout_width="296dp"
+        android:layout_height="257dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/sudoku_title_logo" />
+    <Button
+        android:id="@+id/sudoku_start"
+        android:layout_marginTop="@dimen/_300sdp"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/super_rounded_rectangle_white"
+        android:backgroundTint="#ead5a5"
+        android:text="@string/new_game"
+        android:textSize="@dimen/_17sdp" />
+
+    <Button
+        android:id="@+id/sudoku_load"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/sudoku_start"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/super_rounded_rectangle_white"
+        android:backgroundTint="#d2b168"
+        android:text="@string/load_game"
+        android:textSize="@dimen/_17sdp" />
+</RelativeLayout>

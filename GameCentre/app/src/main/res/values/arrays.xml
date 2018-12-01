@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="difficulty_selector">
+        <item>Easy - 3 x 3</item>
+        <item>Medium - 4 x 4</item>
+        <item>Hard - 5 x 5</item>
+    </string-array>>
+
+    <string-array name="game_selection">
+        <item>Sliding Tiles</item>
+        <item>The Real 2048</item>
+        <item>Quick Sudoku</item>
+    </string-array>>
+</resources>

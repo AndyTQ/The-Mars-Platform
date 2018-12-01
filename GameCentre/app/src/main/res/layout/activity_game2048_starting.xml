@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game2048_starting_background"
+    tools:context=".games.game2048.Game2048StartingActivity">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="349dp"
+        android:layout_height="375dp"
+        android:layout_below="@+id/game_2048_in_game_logo"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.5"
+        android:background="@drawable/super_rounded_rectangle_white" />
+
+    <Button
+        android:id="@+id/activity_game2048_starting_start"
+        android:layout_width="227dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/activity_game2048_size_seekbar"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/super_rounded_rectangle_white"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="@string/new_game"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_15sdp" />
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/activity_game2048_size_seekbar"
+        style="@style/Base.Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="272dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/map_size_text"
+        android:layout_centerHorizontal="true"
+        android:max="4"
+        android:progress="1" />
+
+    <TextView
+        android:id="@+id/map_size_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/game_2048_greetings"
+        android:layout_centerHorizontal="true"
+        android:text="@string/map_size_2048"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_marginTop="@dimen/_45sdp"
+        android:id="@+id/game_2048_greetings"
+        android:layout_width="267dp"
+        android:layout_height="102dp"
+        android:layout_alignTop="@+id/view2"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome to THE REAL 2048.\nTo win, you will have to try to make a 2048 tile!\nGood luck!"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/game_2048_in_game_logo"
+        android:layout_width="354dp"
+        android:layout_height="178dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/_2048_in_game_logo"
+        app:srcCompat="@drawable/in_game_2048_logo" />
+</RelativeLayout>

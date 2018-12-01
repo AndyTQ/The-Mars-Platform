@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fall2018.csc2017.gamecentre.games.slidingtiles.SlidingTilesGestureDetectGridView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="309dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginBottom="53dp"
+        android:alpha="1" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="126dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="315dp"
+        android:layout_height="148dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        app:srcCompat="@drawable/ingame_sliding_tile_logo" />
+
+    <LinearLayout
+        android:layout_width="336dp"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:alpha="0.5"
+        android:background="#d5d5d5"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp">
+
+        <TextView
+            android:id="@+id/sliding_tiles_games_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+
+            android:layout_marginTop="3dp"
+            android:text="@string/time"
+            android:textSize="30sp" />
+
+        <Chronometer
+            android:id="@+id/cmTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="36dp"
+            android:layout_toStartOf="@+id/UndoButton"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/UndoButton"
+            android:layout_width="91dp"
+            android:layout_height="49dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/undo" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

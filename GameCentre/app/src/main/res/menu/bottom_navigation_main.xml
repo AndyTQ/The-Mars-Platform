@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/activity_centre_profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_person_outline_24px"
+        android:title="Me"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/activity_centre_games"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_videogame_asset_24px"
+        android:title="Games"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/activity_centre_rankings"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_score_24px"
+        android:title="Scores"
+        app:showAsAction="ifRoom" />
+</menu>

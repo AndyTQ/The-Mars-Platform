@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerUserScoreboardActivity"
+    android:background="@drawable/per_user_scoreboard_background">
+
+    <TextView
+        android:id="@+id/activity_per_user_scoreboard_title"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="My Scoreboard"
+        android:textSize="@dimen/_30sdp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/activity_per_user_scoreboard_bottom_divider"
+        android:layout_width="336dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/activity_per_user_scoreboard_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="#d5d5d5"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_per_user_scoreboard_table"
+        android:layout_width="332dp"
+        android:layout_height="386dp"
+        android:layout_alignTop="@+id/activity_per_user_scoreboard_bottom_divider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="top"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="259dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/activity_per_user_scoreboard_table"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:alpha="0.5"
+        android:text="To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer. -- William Shakespeare"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

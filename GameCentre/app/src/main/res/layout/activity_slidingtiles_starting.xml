@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slidingtiles_starting_background"
+    tools:context="fall2018.csc2017.gamecentre.games.slidingtiles.SlidingTilesStartingActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <LinearLayout
+        android:layout_width="336dp"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="119dp"
+        android:alpha="0.5"
+        android:background="#9e9e9e"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/activity_slidingtiles_divider_second"
+        android:layout_width="336dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/slidingtiles_difficulty_seekbar"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.5"
+        android:layout_marginTop="5dp"
+        android:background="#9e9e9e"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="336dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/startButton"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.5"
+        android:background="#9e9e9e"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/relativeLayout3"
+        android:layout_width="319dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/activity_slidingtiles_divider_second"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/LoadButton"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="142dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/SaveButton"
+            android:text="@string/load_game"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="503dp" />
+
+        <Button
+            android:id="@+id/SaveButton"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="142dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="19dp"
+            android:text="@string/save_game"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="503dp" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/activity_slidingtiles_customize_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="285dp"
+        android:layout_height="73dp"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_centerHorizontal="true"
+        android:text="CUSTOMIZE TILES"
+        android:textSize="22sp"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/startButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="285dp"
+        android:layout_height="76dp"
+        android:layout_below="@+id/activity_slidingtiles_customize_button"
+        android:layout_centerHorizontal="true"
+        android:text="@string/new_game"
+        android:textSize="24sp"
+        tools:ignore="OnClick" />
+
+    <SeekBar
+        android:id="@+id/slidingtiles_difficulty_seekbar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="327dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="295dp"
+        android:max="11"
+        android:progress="3" />
+
+    <TextView
+        android:id="@+id/allow_max"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="259dp"
+        android:text="@string/allow_max"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/activity_slidingtiles_logo"
+        android:layout_width="328dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/sliding_tiles_ingame_logo"
+        app:srcCompat="@drawable/ingame_sliding_tile_logo" />
+
+
+    <TextView
+        android:id="@+id/login_teaminfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="©2018 Team0500"
+        android:textColor="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:id="@+id/activity_slidingtiles_difficulty_box"
+        android:layout_width="324dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/allow_max"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-259dp">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="0dp"
+            android:entries="@array/difficulty_selector"
+            android:spinnerMode="dialog" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="0dp"
+            android:layout_toStartOf="@+id/spinner"
+            android:text="@string/difficulty_level"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/activity_slidingtiles_goodluck_text_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="137dp"
+        android:text="Now is the time to exercise your brain..."
+        android:textColor="#757575"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/activity_slidingtiles_goodluck_text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_slidingtiles_goodluck_text_0"
+        android:layout_centerHorizontal="true"
+        android:text="Select Difficulty and Undo Limit."
+        android:textColor="#757575"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/activity_slidingtiles_goodluck_text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_slidingtiles_goodluck_text_1"
+        android:layout_centerHorizontal="true"
+        android:text="Good Luck!"
+        android:textColor="#757575"
+        android:textSize="18sp" />
+
+</RelativeLayout>
