@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -27,7 +27,9 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="148dp"
         android:text="You have finished the game."
         app:layout_constraintBottom_toTopOf="@+id/game2048_winning_score"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +40,8 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="11dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/sudoku_winning_score"
         android:text="Score: "
         app:layout_constraintBaseline_toBaselineOf="@+id/game2048_winning_score"
         app:layout_constraintEnd_toStartOf="@+id/game2048_winning_score"
@@ -49,7 +52,9 @@
         android:id="@+id/sudoku_winning_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="63dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="148dp"
         android:text="Loading..."
         app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,11 +63,11 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="146dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginStart="13dp"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="186dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,10 +77,8 @@
             android:id="@+id/sudoku_winning_quit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-
             android:layout_alignParentStart="true"
-            android:layout_marginStart="47dp"
+            android:layout_alignParentTop="true"
             android:text="Quit Game" />
 
         <Button
@@ -83,7 +86,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="30dp"
+            android:layout_alignParentTop="true"
             android:text="Return to Menu" />
     </RelativeLayout>
-</android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>
