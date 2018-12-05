@@ -1,5 +1,4 @@
 # Mars Game Centre
-A game centre that contains fun games and user accounts. <br />
 
 #### Instructions for setting up the environment:
 1. Download Android Studio 3.2.1 from https://developer.android.com/studio/
