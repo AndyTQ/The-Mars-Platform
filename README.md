@@ -1,4 +1,4 @@
-# Mars Game Centre
+# The Mars Game Centre
 
 #### Instructions for setting up the environment:
 1. Download Android Studio 3.2.1 from https://developer.android.com/studio/
