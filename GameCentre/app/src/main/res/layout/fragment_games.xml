@@ -50,18 +50,18 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_margin="10dp"
                     android:background="@android:color/holo_blue_dark"
-                    app:cardBackgroundColor="#3f51b5"
+                    app:cardBackgroundColor="#4a4747"
                     app:cardCornerRadius="2dp"
                     app:cardElevation="4dp">
 
                     <ImageView
-                        android:layout_width="128dp"
+                        android:layout_width="match_parent"
                         android:layout_height="95dp"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
                         android:layout_gravity="center_horizontal"
                         android:background="@android:color/white"
-                        android:src="@drawable/slidetiles_logo" />
+                        android:src="@drawable/sliding_tiles_logo_v2" />
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
@@ -99,13 +99,13 @@
                     android:layout_height="120dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_margin="10dp"
-                    app:cardBackgroundColor="@android:color/holo_orange_dark">
+                    app:cardBackgroundColor="#4a4747">
 
                     <ImageView
                         android:id="@+id/imageView2"
                         android:layout_width="match_parent"
-                        android:layout_height="94dp"
-                        android:src="@drawable/game2048_logo" />
+                        android:layout_height="95dp"
+                        android:src="@drawable/game2048_logo_v2" />
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"
@@ -140,8 +140,8 @@
                     <ImageView
                         android:id="@+id/imageView3"
                         android:layout_width="match_parent"
-                        android:layout_height="94dp"
-                        android:src="@drawable/sudoku_logo"/>
+                        android:layout_height="95dp"
+                        android:src="@drawable/sudoku_logo_v2"/>
 
                     <android.support.constraint.ConstraintLayout
                         android:layout_width="match_parent"

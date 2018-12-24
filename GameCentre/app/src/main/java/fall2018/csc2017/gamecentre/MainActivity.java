@@ -53,7 +53,8 @@ public class MainActivity extends AppCompatActivity implements Serializable {
         mAuth = FirebaseAuth.getInstance();
 
 
-        mainNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        mainNav.setOnNavigationItemSelectedListener(
+                new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 return setFragmentById(item.getItemId());

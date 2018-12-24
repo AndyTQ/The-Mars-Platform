@@ -91,7 +91,6 @@ public abstract class ScoreManager {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 Score exScore = dataSnapshot.getValue(Score.class);
                 updateNewScore(exScore, newScoreNum);
-
             }
 
             @Override
