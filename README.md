@@ -67,7 +67,7 @@ f you have registered before for the Mars Game Centre<br/>
 	* Provide cscteam0500@gmail.com as username and 1Q2W3e4r as password.
 	* Click "Authentication" to see the users that registered into Firebase Authentication.
 	* Click "Database" - "Real-Time Database" to see the additional user information that are stored in the database.
-
+#### Sample Games:
 ## Sliding Tiles
 After choosing the Sliding Tiles game, you will be directed to the
  starting page for sliding tiles.
