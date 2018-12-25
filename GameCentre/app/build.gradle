@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword '1Q2W3e4r'
+            storeFile file('D:/keys/key.jks')
+            storePassword '1Q2W3e4r'
+        }
+    }
     compileSdkVersion 27
     defaultConfig {
         applicationId "fall2018.csc2017.gamecentre"
@@ -9,8 +17,9 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
     }
-    testOptions{
+    testOptions {
         unitTests.returnDefaultValues = true
     }
     buildTypes {
@@ -18,6 +27,8 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    productFlavors {
     }
 }
 

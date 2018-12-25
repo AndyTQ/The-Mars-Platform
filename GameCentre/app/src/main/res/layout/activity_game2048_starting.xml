@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/game2048_starting_background"
+    android:background="@drawable/game2048_background_v2"
     tools:context=".games.game2048.Game2048StartingActivity">
 
     <View
