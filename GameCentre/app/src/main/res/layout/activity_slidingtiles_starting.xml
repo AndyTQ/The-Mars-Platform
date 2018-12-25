@@ -27,7 +27,6 @@
         android:orientation="horizontal">
     </LinearLayout>
 
-
     <LinearLayout
         android:id="@+id/activity_slidingtiles_divider_second"
         android:layout_width="336dp"

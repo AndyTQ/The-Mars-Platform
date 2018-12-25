@@ -12,10 +12,10 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "fall2018.csc2017.gamecentre"
-        minSdkVersion 27
+        minSdkVersion 21
         targetSdkVersion 27
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "1.02"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         signingConfig signingConfigs.config
     }
