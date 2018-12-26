@@ -1,0 +1,129 @@
+
+
+body {
+    background-image: url("galaxy.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@font-face {
+    font-family: 'maturasc';
+    src: url('MATURASC.TTF') format('truetype'); /* Safari, Android, iOS */
+}
+
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    position: relative;
+    font-family: 'maturasc', sans-serif;
+    padding-top: 45px;
+    overflow: hidden;
+    height: 150px;
+}
+
+
+
+.app-description {
+    margin-top: 30px;
+    color: white;
+    font-family: 'Thasadith', sans-serif;
+}
+
+.about{
+    margin-top: 25px;
+    color:white;
+    font-family: 'Thasadith', sans-serif;
+}
+
+#divider-download-release-notes {
+    margin-top: 25px;
+    width: 75%;
+}
+
+.app-release-notes {
+    margin-top: 25px;
+    color: white;
+    font-family: 'Thasadith', sans-serif;
+}
+
+.app-download {
+    width: 300px;
+    margin-top: 30px;
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    font-family: 'Thasadith', sans-serif;
+}
+
+.content {
+    padding: 10px 25px 25px 25px;
+    background-color: rgba(0,0,0,0.7);
+    display: inline-block;
+}
+
+
+.slider {
+    margin: auto;
+    width: 150px;
+    font-size: 20px;
+    font-family: 'Thasadith', sans-serif;
+    color: white;
+    text-align: center;
+    position: static;
+    overflow: hidden;
+    top: 0;
+    z-index: 2;
+    padding: 8px 0 0 0;
+}
+
+#footer {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #CCC;
+    overflow: auto;
+    z-index: 1;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-wrapper {
+    text-align: center;
+    width: 100%;
+}
+
+table {
+  margin: auto;
+  padding-top: 45px;
+  position: relative;
+  table-layout: fixed;
+}
+
+td {
+  border: 0;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  background-color: #CCC;
+}
+
+button {
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  border: 1px solid black;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  background-color: #CCC;
+}
+
+button:disabled {
+  color: black;
+}
+
