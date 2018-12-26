@@ -1,3 +1,5 @@
+Big Thanks to Laurel Template
+
 # Laurel
 
 A landing page template.
