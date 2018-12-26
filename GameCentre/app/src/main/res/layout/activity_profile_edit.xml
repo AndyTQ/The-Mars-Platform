@@ -139,6 +139,7 @@
                         android:layout_centerHorizontal="true">
 
                         <TextView
+                            android:id="@+id/textMyBio"
                             android:layout_width="98dp"
                             android:layout_height="wrap_content"
                             android:layout_alignParentStart="true"
@@ -150,12 +151,12 @@
                         <EditText
                             android:id="@+id/profile_edit_bio"
                             android:layout_width="223dp"
-                            android:layout_height="match_parent"
+                            android:layout_height="48dp"
                             android:layout_alignParentTop="true"
-                            android:ems="10"
-                            android:hint="Tell Us About Your Story..."
-                            android:inputType="textMultiLine" />
-
+                            android:layout_gravity="right"
+                            android:layout_toEndOf="@+id/textMyBio"
+                            android:hint="Please Enter Your Bio"
+                            android:imeOptions="actionNext" />
                     </RelativeLayout>
 
                 </RelativeLayout>

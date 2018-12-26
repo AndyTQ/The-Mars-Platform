@@ -47,7 +47,7 @@ public class User implements Serializable  {
     public User(String name, String email, String uid) {
         this.name = name;
         this.email = email;
-        this.location = "Toronto, Canada";
+        this.location = "";
         this.bio = "Introduce yourself...";
         this.imageUrl = "https://firebasestorage.googleapis.com/v0/b/gamecentre-fa151.appspot.com/o/default_profile_pic.png?alt=media&token=bdbb942c-a7ae-49a9-90f1-a5bfa1c0fc94";
         this.uid = uid;
@@ -100,6 +100,10 @@ public class User implements Serializable  {
         return email;
     }
 
+    /**
+     * Setter for the user's location.
+     */
+    public void setLocation(String location) {this.location = location;}
 
     /**
      * Return the string representation of the user
