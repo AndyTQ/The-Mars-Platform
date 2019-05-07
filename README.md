@@ -1,4 +1,6 @@
-# The Mars Platform - A Mini-game Centre
+# The Mars Platform - A Mini-game Distribution Platform
+
+This is a game distribution platform that is currently available on Android.
 
 #### Instructions for setting up the environment:
 1. Download Android Studio 3.2.1 from https://developer.android.com/studio/
